@@ -1,0 +1,73 @@
+daijkstra function
+
+
+
+
+
+
+
+function dijkstra(G, S)
+    for each vertex V in G
+        distance[V] <- infinite                         #
+        previous[V] <- NULL                             #
+        If V != S, add V to Priority Queue Q            #
+    distance[S] <- 0                                    #
+	
+    while Q IS NOT EMPTY
+        U <- Extract MIN from Q                         #
+        for each unvisited neighbour V of U             #
+            tempDistance <- distance[U] + edge_weight(U, V)#
+            if tempDistance < distance[V]               #
+                distance[V] <- tempDistance             #
+                previous[V] <- U                        #
+    return distance[], previous[]
+
+
+
+
+what left??
+backtracking the path                                    
+obstacles..
+
+
+
+if(random(1)<0.1)
+
+
+
+
+for (let i = 0; i < col ; i++) {
+    arr[i]=new Array(row);
+  }  
+
+
+ for (let i = 0; i < col; i++) {
+  for (let j = 0; j < row; j++) {
+   arr[i][j]=grid[i][j];
+   grid[i][j].partofQueue=true;
+  }
+ }
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+	// if(this.y > 1)
+		// 	arr.push([this.x, this.y-1])
+
+		// if(this.y < (600/h)-1)
+		// 	arr.push([this.x, this.y+1])
+
+		// if(this.x > 1)
+		// 	arr.push([this.x-1, this.y])
+
+		// if(this.x < (600/w)-1)
+		// 	arr.push([this.x+1, this.y])
